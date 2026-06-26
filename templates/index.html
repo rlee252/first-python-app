@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First App</title>
+    <title>Feelings App</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello Raymond 👋</h1>
-    <p>This is my first real web page using Flask.</p>
+
+    <h1>Feelings Map</h1>
+
+    <table>
+        <tr>
+            <th>Core Feeling</th>
+            <th>Specific Feelings</th>
+        </tr>
+
+        {% for core, specifics in feelings.items() %}
+        <tr>
+            <td><strong>{{ core }}</strong></td>
+            <td>
+                <ul>
+                    {% for feeling in specifics %}
+                        <li>{{ feeling }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
 </body>
 </html>
