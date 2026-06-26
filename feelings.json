@@ -1,0 +1,40 @@
+{
+    "Happy": {
+        "Optimistic": [
+            "Hopeful",
+            "Inspired",
+            "Confident"
+        ],
+        "Peaceful": [
+            "Calm",
+            "Relaxed",
+            "Secure"
+        ]
+    },
+    "Sad": {
+        "Lonely": [
+            "Isolated",
+            "Abandoned",
+            "Ignored"
+        ],
+        "Hurt": [
+            "Embarrassed",
+            "Disappointed",
+            "Rejected"
+        ]
+    },
+    "Angry": {
+        "Frustrated": [
+            "Annoyed",
+            "Impatient",
+            "Irritated"
+        ]
+    },
+    "Fear": {
+        "Anxious": [
+            "Worried",
+            "Overwhelmed",
+            "Insecure"
+        ]
+    }
+}
